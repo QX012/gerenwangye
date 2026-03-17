@@ -209,16 +209,25 @@
             function playMusic() {
                 audio.play().catch(function(error) {
                     console.log('自动播放被阻止:', error);
+                    // 尝试使用用户交互事件触发播放
+                    document.addEventListener('click', function playOnClick() {
+                        audio.play().catch(function(error) {
+                            console.log('点击播放失败:', error);
+                        });
+                        document.removeEventListener('click', playOnClick);
+                    });
                 });
             }
             
-            // 监听用户交互事件
-            document.addEventListener('click', playMusic, { once: true });
-            document.addEventListener('keydown', playMusic, { once: true });
-            document.addEventListener('touchstart', playMusic, { once: true });
-            
             // 初始尝试播放
             playMusic();
+            
+            // 监听页面可见性变化，当页面重新可见时尝试播放
+            document.addEventListener('visibilitychange', function() {
+                if (!document.hidden) {
+                    playMusic();
+                }
+            });
         });
     </script>
 </body>

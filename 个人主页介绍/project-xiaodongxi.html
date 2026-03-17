@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全局绘图工具 - 项目详情</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-detail-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px 50px;
+        }
+        
+        .project-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .project-header h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .project-header p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-content {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        
+        .project-content h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .project-content p {
+            color: rgba(255,255,255,0.9);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .project-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .project-content ul li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .project-content ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #a8b2ff;
+            font-weight: bold;
+        }
+        
+        .project-actions {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            color: #fff;
+        }
+        
+        .project-actions h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        
+        .project-actions .btn {
+            background-color: #fff;
+            color: #667eea;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+        }
+        
+        .project-actions .btn:hover {
+            background-color: #667eea;
+            color: #fff;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #a8b2ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #fff;
+        }
+        
+        .back-link i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 光晕效果层 -->
+    <div class="glow-overlay"></div>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">首页</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#skills">技能</a></li>
+                <li><a href="index.html#projects">项目</a></li>
+                <li><a href="index.html#contact">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="project-detail-container">
+        <div class="project-header">
+            <h1>全局绘图工具</h1>
+            <p>几乎可在电脑任何页面绘图</p>
+        </div>
+        
+        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20web%20application%20dashboard%2C%20clean%20design%2C%20professional%20UI&image_size=landscape_16_9" alt="全局绘图工具" class="project-image">
+        
+        <div class="project-content">
+            <h2>项目介绍</h2>
+            <p>全局绘图工具是一款功能强大的浏览器扩展工具，允许用户在几乎任何网页上进行自由绘图。无论是标注重要信息、绘制示意图，还是进行在线教学演示，这款工具都能满足您的需求。</p>
+            
+            <h2>主要功能</h2>
+            <ul>
+                <li>支持在任意网页上进行自由绘图</li>
+                <li>提供多种画笔颜色和粗细选择</li>
+                <li>支持橡皮擦功能，方便修改</li>
+                <li>一键清除所有绘图内容</li>
+                <li>支持保存绘图结果为图片</li>
+                <li>简洁易用的用户界面</li>
+            </ul>
+            
+            <h2>技术特点</h2>
+            <p>本项目采用纯前端技术实现，无需后端服务器支持。通过HTML5 Canvas API实现绘图功能，使用JavaScript处理用户交互，确保流畅的绘图体验。工具采用模块化设计，易于扩展和维护。</p>
+            
+            <h2>使用场景</h2>
+            <ul>
+                <li>在线教学与演示</li>
+                <li>网页内容标注与分享</li>
+                <li>设计稿快速标注</li>
+                <li>远程协作与沟通</li>
+                <li>个人笔记与灵感记录</li>
+            </ul>
+        </div>
+        
+        <div class="project-actions">
+            <h2>准备好开始了吗？</h2>
+            <a href="https://github.com/QX012/xiaodongxi" class="btn" target="_blank">获取项目</a>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i>返回项目列表</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/QX012/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="contact-unavailable.html" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="contact-unavailable.html" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="contact-unavailable.html" target="_blank"><i class="fab fa-weixin"></i></a>
+            </div>
+            <p>&copy; 2026 个人主页. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 背景音乐 -->
+    <audio id="backgroundMusic" src="UnicornPhantom - 独角.mp3" loop>
+        您的浏览器不支持音频元素。
+    </audio>
+    
+    <script>
+        // 处理浏览器自动播放限制
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('backgroundMusic');
+            
+            // 尝试播放音乐
+            function playMusic() {
+                audio.play().catch(function(error) {
+                    console.log('自动播放被阻止:', error);
+                });
+            }
+            
+            // 监听用户交互事件
+            document.addEventListener('click', playMusic, { once: true });
+            document.addEventListener('keydown', playMusic, { once: true });
+            document.addEventListener('touchstart', playMusic, { once: true });
+            
+            // 初始尝试播放
+            playMusic();
+        });
+    </script>
+</body>
+</html>

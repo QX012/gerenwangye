@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 光晕效果层 -->
+    <div class="glow-overlay"></div>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="avatar.png" alt="个人照片" class="profile-img">
+            <h1>你好，我是 <span class="highlight">开发者</span></h1>
+            <p class="subtitle">全栈开发工程师 | 热爱技术 | 持续学习</p>
+            <div class="social-links">
+                <a href="https://github.com/QX012/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="contact-unavailable.html" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="contact-unavailable.html" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="contact-unavailable.html" target="_blank"><i class="fab fa-weixin"></i></a>
+            </div>
+            <a href="#contact" class="btn">联系我</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>我是一名充满激情的全栈开发工程师，拥有多年的开发经验。我热爱解决复杂问题，并且善于学习新技术。</p>
+                    <p>我的专业背景包括前端开发、后端开发以及数据库设计。我热衷于构建高质量的应用程序，并且注重用户体验。</p>
+                    <p>在工作之余，我喜欢阅读技术博客、参与开源项目，以及与其他开发者交流学习。</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>全栈开发工程师</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>计算机科学学士</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>中国，北京</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>example@example.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>项目</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="11.png" alt="全局绘图工具">
+                    <h3>全局绘图工具</h3>
+                    <p>几乎可在电脑任何页面绘图</p>
+                    <a href="project-xiaodongxi.html" class="btn">查看详情</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20interface%2C%20user%20friendly%2C%20modern%20design&image_size=landscape_16_9" alt="项目2">
+                    <h3>项目名称 2</h3>
+                    <p>这是一个移动应用程序，使用React Native开发，具有流畅的动画和交互效果。</p>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=data%20visualization%20dashboard%2C%20charts%20and%20graphs%2C%20professional%20design&image_size=landscape_16_9" alt="项目3">
+                    <h3>项目名称 3</h3>
+                    <p>这是一个数据可视化平台，使用D3.js和Express开发，能够实时展示和分析数据。</p>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>技能</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                    <span>90%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                    <span>85%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                    <span>80%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                    <span>75%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                    <span>70%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>数据库</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                    <span>75%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>example@example.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+86 123 4567 8910</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>中国，北京</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="姓名" required>
+                    <input type="email" placeholder="邮箱" required>
+                    <textarea placeholder="留言" rows="5" required></textarea>
+                    <button type="submit" class="btn">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/QX012/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="contact-unavailable.html" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="contact-unavailable.html" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="contact-unavailable.html" target="_blank"><i class="fab fa-weixin"></i></a>
+            </div>
+            <p>&copy; 2026 个人主页. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 背景音乐 -->
+    <audio id="backgroundMusic" src="UnicornPhantom - 独角.mp3" loop>
+        您的浏览器不支持音频元素。
+    </audio>
+    
+    <script>
+        // 处理浏览器自动播放限制
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('backgroundMusic');
+            
+            // 尝试播放音乐
+            function playMusic() {
+                audio.play().catch(function(error) {
+                    console.log('自动播放被阻止:', error);
+                });
+            }
+            
+            // 监听用户交互事件
+            document.addEventListener('click', playMusic, { once: true });
+            document.addEventListener('keydown', playMusic, { once: true });
+            document.addEventListener('touchstart', playMusic, { once: true });
+            
+            // 初始尝试播放
+            playMusic();
+        });
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

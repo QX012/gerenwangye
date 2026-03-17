@@ -1,2 +1,2 @@
-# gerenwangye
-个人网页设置
+# gerenwang
+个人网页设置，切换页面后自动播放音乐‘’
